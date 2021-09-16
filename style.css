@@ -1,0 +1,174 @@
+*{
+   box-sizing: border-box; 
+}
+body{
+    --accent-color:rgb(248, 246, 241);
+    --background-color: white;
+    --text-color: black;
+    --button-text-color:var(--text-color);
+    --transition-delay: 1s;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+
+    transition: var(--transition-delay);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+body.dark{
+    --accent-color: #070706;
+    --background-color: #333;
+    --text-color: white;
+}
+#darkModeTog{
+    font-size: 28px;
+    width:100px;
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    background-color:var(--accent-color);
+    color: var(--button-text-color);
+}
+header{
+    display:flex;
+    padding-top:5px;
+    padding-bottom:15px;
+    justify-content: space-evenly;
+    align-items:center;
+    width:100vw;
+}
+#banner{
+    display:flex;
+    align-items: center;
+}
+header img{
+    width:80px;
+    border:1px solid silver;
+    border-radius: 50%;
+    color: var(--text-color);
+}
+#logo{
+    margin-right:10px;
+}
+
+#container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:600px;
+    height:400px;
+    border:1px solid silver;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding:10px 0;
+}
+h1,p{
+     margin:0;
+     font-family:arial;
+     color: var(--text-color);
+    }
+p{
+    padding:0;
+}
+#choices{
+    display:flex;
+    width:400px;
+    justify-content: space-between;
+}
+button{
+    margin-top:5px;
+    margin-left:5px;
+    padding:5px;
+    width:100px;
+    height:50px;
+    font-size:20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color:var(--accent-color);
+    color: var(--button-text-color);
+    box-shadow: 5px 5px;
+    border:none;
+    outline:none;
+}
+button:hover, button:focus{
+    transform: scale(1.1);
+}
+#display{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding:10px;
+}
+.choiceWrap{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+#scoreKeeper{
+    display:flex;
+    justify-content: space-between;
+    width:400px;
+    
+}
+#wins{
+    color:green;
+    padding:5px;
+}
+#losses{
+    color:red;
+    padding:5px;
+}
+#draws{
+    color:yellow;
+    padding:5px;
+}
+.scores{
+    padding:5px;
+}
+#result{
+    margin:15px 0;
+    padding:5px;
+    font-size:24px;
+    font-weight: 500;
+}
+#gameStatus{
+    font-size:30px;
+    color:orangered;
+    font-weight:600;
+}
+
+.tab{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 5px;
+    cursor: pointer;
+    width:100px;
+    height:30px;
+    font-size:20px;
+    padding:10px;
+    background-color: orange;
+    color:white;
+    margin:10px;
+}
+
+.pic{
+    width: 3.75em;
+    height:3.75em;
+    box-shadow: 5px 2px;
+    padding:5px;
+}
+.versus{
+    margin:10px;
+    padding:5px;
+    font-weight:500;
+}

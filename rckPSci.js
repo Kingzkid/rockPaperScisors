@@ -30,12 +30,10 @@ let computerChoice = document.querySelector("#compChoice");
 
 //Computer Choice code
 let compChoices = ["Rock", "Paper", "Scissors"];
-//let compChoice = compChoices[Math.floor(Math.random()*compChoices.length)];
 function compChoice(){
     let choice = compChoices[Math.floor(Math.random()*compChoices.length)];
     return choice;
 }
-//computerChoice.innerHTML =compChoice;
 
 //buttons with eventListeners
 rock.addEventListener("click", playRock);
@@ -120,9 +118,7 @@ function gameOver(count){
         rock.removeEventListener("click", playRock);
         paper.removeEventListener("click", playPaper);
         scissors.removeEventListener("click", playScissors);
-    }/*else {
-        gameStatus.innerHTML = " ";
-    }*/
+    }
 }
 //reset game          
 function resetChoice(){
